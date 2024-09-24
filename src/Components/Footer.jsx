@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
         <div className="d-flex gap-2 justify-content-center mt-3">
           <span>
-            <a href="">
+            <a target="_blank" href="https://github.com/Paresh-Mistry">
               <img
                 width={28}
                 src="https://cdn-icons-png.flaticon.com/128/733/733553.png"
@@ -23,7 +23,10 @@ export default function Footer() {
             </a>
           </span>
           <span>
-            <a href="">
+            <a
+              target="_blank"
+              href="https://linkedin.com/in/paresh-mistry-975b64270"
+            >
               <img
                 width={28}
                 src="https://cdn-icons-png.flaticon.com/128/145/145807.png"

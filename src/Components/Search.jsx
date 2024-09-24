@@ -20,7 +20,7 @@ export default function Search(props) {
   return (
     <main>
       <div className="container">
-        <div className="my-4 d-flex align-items-center gap-2 border rounded-5 py-1 px-3">
+        <div className="my-4 d-flex align-items-center gap-2 border border-primary rounded-5 py-1 px-3">
           <div className="w-100">
             <input
               className="w-100 border-0"
