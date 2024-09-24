@@ -2,8 +2,8 @@ import React from "react";
 import { Header } from "./Components/Header";
 import Footer from "./Components/Footer";
 import Search from "./Components/Search";
+import { Sidebar } from "./Components/Sidebar";
 import { useState } from "react";
-import { Sidebar } from "./Components/sidebar";
 
 function App() {
   const [themestyle, setThemestyle] = useState({

@@ -1,15 +1,13 @@
 import React from "react";
+import '../css/Sidebar.css'
 
 export const Sidebar = (props) => {
   return (
     <aside
-      className="position-absolute w-25 p-3 mobileresponse"
+      className="position-absolute p-3 mobileresponse"
       style={{
-        height: "100vh",
         ...props.sidebar,
         ...props.searchstyle,
-        zIndex : '1',
-        boxShadow: "0px 3px 10px grey",
       }}
     >
       <div className="d-flex justify-content-between align-items-center px-2">

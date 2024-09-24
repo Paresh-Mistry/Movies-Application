@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import Content from "./Content";
 
 export default function Search(props) {
-  const [searchinput, setsearchinput] = useState(""); // Holds the user search input
+  const [searchinput, setsearchinput] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
-  // Handle input change
   let inputchange = (e) => {
     setsearchinput(e.target.value);
   };
 
   let handleclick = () => {
     if (searchinput) {
-      props.onSearch(searchinput);
+      setSearchTerm(searchinput);
     } else {
-      alert("Please enter a search term.");
+      alert(`Search Input Cannot be Null`);
     }
   };
 
@@ -37,7 +37,7 @@ export default function Search(props) {
             />
           </div>
           <div>
-            <button className="btn" title="Search Movies">
+            <button className="btn" title="Search Movies" onClick={handleclick}>
               <img
                 width={20}
                 src="https://cdn-icons-png.flaticon.com/128/10469/10469570.png"
@@ -46,7 +46,8 @@ export default function Search(props) {
             </button>
           </div>
         </div>
-        <Content cardstyle={props.searchstyle} search={searchinput} />
+
+        <Content cardstyle={props.searchstyle} search={searchTerm} />
       </div>
     </main>
   );
